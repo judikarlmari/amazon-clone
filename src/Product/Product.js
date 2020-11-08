@@ -1,5 +1,6 @@
 import React from 'react';
 import './Product.css';
+import { makeid } from '../helper/function'
 import { useStateValue } from '../Context/StateProvider';
 
 function Product({ id, title, image, price, rating }) {
@@ -10,6 +11,7 @@ function Product({ id, title, image, price, rating }) {
         dispatch({
             type: "ADD_TO_BASKET",
             item: {
+                key: makeid(),
                 id: id,
                 title: title,
                 image: image,
