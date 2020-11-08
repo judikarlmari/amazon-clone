@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import CurrencyFormat from 'react-currency-format';
 import { useStateValue } from '../Context/StateProvider';
 import { getBasketTotal } from '../Context/reducer';
