@@ -4,6 +4,7 @@ import './App.css';
 
 import Header from './Header/Header';
 import Home from './Home/Home';
+import Checkout from './Checkout/Checkout';
 
 function App() {
   return (
@@ -11,6 +12,9 @@ function App() {
       <div className="App">
         <Header />
         <Switch>
+          <Route path="/checkout">
+            <Checkout />
+          </Route>
           <Route path="/">
             <Home />
           </Route>
